@@ -1,0 +1,17 @@
+// src/components/Footer.jsx
+import React from "react";
+
+function Footer() {
+  return (
+    <footer className="bg-gray-200 text-black py-8 border-t-4 border-solid border-gray-400">
+      <div className="container mx-auto px-4 text-center">
+        <p>&copy; {new Date().getFullYear()} Darulkarim. All Rights Reserved.</p>
+        <p className="mt-2">
+          <a href="#" className="hover:underline">Privacy Policy</a> | <a href="#" className="hover:underline">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;

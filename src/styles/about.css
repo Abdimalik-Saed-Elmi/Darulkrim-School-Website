@@ -1,0 +1,10 @@
+.about-us-title {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  }
+
+  .about-us-content {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    line-height: 1.8; /* Increase line height */
+    text-align: justify; /* Justify text */
+  }
