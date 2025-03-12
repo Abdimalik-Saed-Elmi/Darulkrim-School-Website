@@ -8,7 +8,7 @@ function Hero() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className=" opacity-5  min-h-screen flex items-center justify-center text-center text-black  inset-0 bg-[url('Darulkarim-sahal.jpg')] bg-cover bg-center "
+      className="min-h-screen flex items-center justify-center text-center text-black  inset-0 bg-[url('Darulkarim-sahal.jpg')] bg-cover bg-center "
     >
       <div className="container mx-auto px-4">
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
