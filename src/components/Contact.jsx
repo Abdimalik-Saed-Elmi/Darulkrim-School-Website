@@ -10,7 +10,7 @@ function Contact() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="py-16 bg-[url('https://via.placeholder.com/1500')] bg-cover bg-center bg-gray-900 text-white"
+      className="py-16  bg-cover bg-center bg-blue-300 text-black"
     >
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
@@ -22,21 +22,21 @@ function Contact() {
               Waxaad nagala soo xiriiri kartaa macluumaadka hoos ku qoran:
             </p>
             <ul className="list-disc list-inside mb-4 flex flex-col space-y-6">
-              <li className="flex items-center space-x-2"><FaMapMarkerAlt size={40} className=" bg-green-500 rounded-full p-1 mr-2" />Address: 30th Street, Hodan District, Mogadishu-Somalia</li>
-              <li className="flex items-center space-x-2"><FaPhoneAlt size={40} className=" bg-green-500 rounded-full p-1 mr-2" />Phone: +252613777623 | +252615633116 </li>
-              <li className="flex items-center space-x-2"> <FaEnvelope size={40} className=" bg-green-500 rounded-full p-1 mr-2" />Email:  <a href="https://mail.google.com/" className="text-blue-400 ml-2"> schooldks2022@gmail.com</a></li>
+              <li className="flex items-center space-x-2"><FaMapMarkerAlt size={35} className="  rounded-full p-1 mr-2 " />Address: 30th Street, Hodan District, Mogadishu-Somalia</li>
+              <li className="flex items-center space-x-2"><FaPhoneAlt size={35} className=" rounded-full p-1 mr-2" />Phone:   <a href="https://api.whatsapp.com/send?phone=+252613777623&text=Darulkarim" className="hover:text-blue-900 hover:font-bold hover:underline"> +252613777623 </a>|<a href="https://api.whatsapp.com/send?phone=+252615633116&text=Darulkarim" className="hover:text-blue-900 hover:font-bold hover:underline">+252615633116 </a> </li>
+              <li className="flex items-center space-x-2"> <FaEnvelope size={35} className=" rounded-full p-1 mr-2" />Email:  <a href="https://mail.google.com/" className="text-blue-900 ml-2 font-bold"> schooldks2022@gmail.com</a></li>
             </ul>
             <div className="flex space-x-8 mt-8">
             <a href="https://www.facebook.com/profile.php?id=100057218268902" className="hover:text-gray-300 flex items-center gap-2">
-            <FaFacebook size={40}  className=" bg-green-500 rounded-full p-1"/>
+            <FaFacebook size={35}  className="rounded-full p-1"/>
             Facebook
           </a>
           <a href="#" className="hover:text-gray-300 flex items-center gap-2">
-            <FaTwitter size={40} className=" bg-green-500 rounded-full p-1"/>
+            <FaTwitter size={35} className="rounded-full p-1"/>
             Twitter
           </a>
           <a href="#" className="hover:text-gray-300 flex items-center gap-2">
-            <FaInstagram size={40} className=" bg-green-500 rounded-full p-1"/>
+            <FaInstagram size={35} className="rounded-full p-1"/>
             Instagram
           </a>
             </div>
@@ -69,7 +69,7 @@ function Contact() {
                   className="w-full border border-gray-300 rounded-md p-2 bg-white text-gray-800"
                 ></textarea>
               </div>
-              <button className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-green-500">
+              <button className="bg-green-500 text-black py-2 px-4 rounded-md hover:bg-blue-600">
                 Submit
               </button>
             </motion.form>

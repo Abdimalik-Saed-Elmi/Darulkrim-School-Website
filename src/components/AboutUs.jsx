@@ -10,7 +10,7 @@ function AboutUs() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="py-16 min-h-screen bg-gray-900 text-white"
+      className="py-16 min-h-screen bg-blue-300 text-black"
     >
       <div className="container mx-auto px-4">
       <motion.h2

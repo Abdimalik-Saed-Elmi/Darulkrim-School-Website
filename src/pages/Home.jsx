@@ -7,6 +7,7 @@ import Faculty from "../components/Faculty";
 import TopStudents from "../components/TopStudents";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Subjects from "../components/Subjects";
 
     function Home() {
       return (
@@ -14,6 +15,7 @@ import Footer from "../components/Footer";
         <Hero />
         <AboutUs />
         <Programs />
+        <Subjects />
         <TopStudents />
         <Contact />
         </div>

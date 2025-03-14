@@ -9,7 +9,7 @@ function Navbar() {
     const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
-    <nav className="bg-gray-200 text-white p-6 border-b-4 border-solid border-gray-500  w-full">
+    <nav className="bg-blue-300 text-white p-6 border-b-2 border-solid border-gray-200  w-full">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center">
         <img src="DarulkarimLogo.png" alt="Darulkarim" className="h-[50px] w-[50px] rounded mr-2"/>
@@ -28,7 +28,10 @@ function Navbar() {
         </div>
         <div className="hidden md:flex space-x-4">
         <Link to="/dashboard" className="bg-blue-800 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-green-600 transition-colors">
-          Dashboard
+          Login
+          </Link>
+        <Link to="/dashboard" className="bg-blue-800 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-green-600 transition-colors">
+          Student Portal
           </Link>
         </div>
         <button onClick={()=>{setMobileMenu(!mobileMenu)}} className="md:hidden">
@@ -45,6 +48,9 @@ function Navbar() {
           </Link>
           <Link to="/contact" className="bg-green-800 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-green-600 transition-colors">
             Contact
+          </Link>
+          <Link to="/dashboard" className="bg-blue-800 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-green-600 transition-colors">
+          Login
           </Link>
           <Link to="/dashboard" className="bg-blue-800 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-green-600 transition-colors">
           Dashboard

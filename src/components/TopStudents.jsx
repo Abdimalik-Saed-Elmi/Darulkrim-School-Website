@@ -27,10 +27,10 @@ function TopStudents() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="py-16 bg-gray-100 text-gray-800"
+      className="min-h-screen py-16 bg-gray-100 text-gray-800"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-20">
           Ardayda 2024 Kaalmaha Galay
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
