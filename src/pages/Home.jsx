@@ -6,18 +6,22 @@ import AboutUs from "../components/AboutUs";
 import Faculty from "../components/Faculty";
 import TopStudents from "../components/TopStudents";
 import Contact from "../components/Contact";
-import Footer from "../components/Footer";
 import Subjects from "../components/Subjects";
+import { useTheme } from "../Hooks/ThemeContext";
 
     function Home() {
+      const { darkMode } = useTheme();
       return (
-        <div> {/* Add a Tailwind CSS class */}
-        <Hero />
+        <div>
+           <Hero />
+        <div className={`p-4 ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
+       
         <AboutUs />
         <Programs />
         <Subjects />
         <TopStudents />
         <Contact />
+        </div>
         </div>
       );
     }
