@@ -1,6 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaFacebook, FaTwitter, FaInstagram, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaEnvelope,
+} from "react-icons/fa";
 import "../styles/about.css";
 import { useTheme } from "../Hooks/ThemeContext";
 
@@ -13,17 +20,40 @@ function Contact() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className={`py-16 bg-cover bg-center ${darkMode ? "bg-gray-900 text-gray-300" : "bg-blue-300 text-black"}`} // Adjust background and text colors
+      className={`py-16 bg-cover bg-center ${
+        darkMode ? "bg-gray-900 text-gray-300" : "bg-blue-300 text-black"
+      }`} // Adjust background and text colors
     >
       <div className="container mx-auto px-4">
-        <h2 className={`text-3xl md:text-4xl font-bold text-center mb-8 ${darkMode ? "text-white" : "text-black"}`}>
+        <h2
+          className={`text-3xl md:text-4xl font-bold text-center mb-12 ${
+            darkMode ? "text-white" : "text-black"
+          }`}
+        >
           Contact Us
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <p className={`text-lg font-bold leading-relaxed mb-12 ${darkMode ? "text-gray-300" : "text-black"}`}>
+            <p
+              className={`text-lg font-bold leading-relaxed mb-6 ${
+                darkMode ? "text-gray-300" : "text-black"
+              }`}
+            >
               Waxaad nagala soo xiriiri kartaa macluumaadka hoos ku qoran:
             </p>
+            <div className="flex space-x-8 mb-6">
+              <a
+                href="#"
+                className="hover:text-gray-300 flex items-center gap-2"
+              >
+                <img
+                  src="DarulkarimLogo.png"
+                  alt="Darulkarim"
+                  className="w-20 h-20"
+                />
+                <span className=" text-2xl font-semibold text-red-500">DARUL-KARIM PRIMARY <br /> AND SECONDARY SCHOOL</span>
+              </a>
+            </div>
             <ul className="list-disc list-inside mb-4 flex flex-col space-y-6">
               <li className="flex items-center space-x-2">
                 <FaMapMarkerAlt size={35} className="rounded-full p-1 mr-2" />
@@ -31,23 +61,53 @@ function Contact() {
               </li>
               <li className="flex items-center space-x-2">
                 <FaPhoneAlt size={35} className="rounded-full p-1 mr-2" />
-                Phone: <a href="https://api.whatsapp.com/send?phone=+252613777623&text=Darulkarim" className="hover:text-blue-900 hover:font-bold hover:underline"> +252613777623 </a>|<a href="https://api.whatsapp.com/send?phone=+252615633116&text=Darulkarim" className="hover:text-blue-900 hover:font-bold hover:underline">+252615633116 </a>
+                Phone:{" "}
+                <a
+                  href="https://api.whatsapp.com/send?phone=+252613777623&text=Darulkarim"
+                  className="hover:text-blue-900 hover:font-bold hover:underline"
+                >
+                  {" "}
+                  +252613777623{" "}
+                </a>
+                |
+                <a
+                  href="https://api.whatsapp.com/send?phone=+252615633116&text=Darulkarim"
+                  className="hover:text-blue-900 hover:font-bold hover:underline"
+                >
+                  +252615633116{" "}
+                </a>
               </li>
               <li className="flex items-center space-x-2">
                 <FaEnvelope size={35} className="rounded-full p-1 mr-2" />
-                Email: <a href="https://mail.google.com/" className="text-blue-900 ml-2 font-bold"> schooldks2022@gmail.com</a>
+                Email:{" "}
+                <a
+                  href="https://mail.google.com/"
+                  className="text-blue-900 ml-2 font-bold"
+                >
+                  {" "}
+                  schooldks2022@gmail.com
+                </a>
               </li>
             </ul>
             <div className="flex space-x-8 mt-8">
-              <a href="https://www.facebook.com/profile.php?id=100057218268902" className="hover:text-gray-300 flex items-center gap-2">
+              <a
+                href="https://www.facebook.com/profile.php?id=100057218268902"
+                className="hover:text-gray-300 flex items-center gap-2"
+              >
                 <FaFacebook size={35} className="rounded-full p-1" />
                 Facebook
               </a>
-              <a href="#" className="hover:text-gray-300 flex items-center gap-2">
+              <a
+                href="#"
+                className="hover:text-gray-300 flex items-center gap-2"
+              >
                 <FaTwitter size={35} className="rounded-full p-1" />
                 Twitter
               </a>
-              <a href="#" className="hover:text-gray-300 flex items-center gap-2">
+              <a
+                href="#"
+                className="hover:text-gray-300 flex items-center gap-2"
+              >
                 <FaInstagram size={35} className="rounded-full p-1" />
                 Instagram
               </a>
@@ -61,27 +121,60 @@ function Contact() {
               className="space-y-4"
             >
               <div>
-                <label className={`block text-lg font-medium mb-1 ${darkMode ? "text-gray-300" : "text-black"}`}>Magaca:</label>
+                <label
+                  className={`block text-lg font-medium mb-1 ${
+                    darkMode ? "text-gray-300" : "text-black"
+                  }`}
+                >
+                  Magaca:
+                </label>
                 <input
                   type="text"
-                  className={`w-full border border-gray-300 rounded-md p-2 ${darkMode ? "bg-gray-800 text-gray-300" : "bg-white text-gray-800"}`}
+                  required
+                  className={`w-full border border-gray-300 rounded-md p-2 ${
+                    darkMode
+                      ? "bg-gray-800 text-gray-300"
+                      : "bg-white text-gray-800"
+                  }`}
                 />
               </div>
               <div>
-                <label className={`block text-lg font-medium mb-1 ${darkMode ? "text-gray-300" : "text-black"}`}>Email:</label>
+                <label
+                  className={`block text-lg font-medium mb-1 ${
+                    darkMode ? "text-gray-300" : "text-black"
+                  }`}
+                >
+                  Email:
+                </label>
                 <input
                   type="email"
-                  className={`w-full border border-gray-300 rounded-md p-2 ${darkMode ? "bg-gray-800 text-gray-300" : "bg-white text-gray-800"}`}
+                  required
+                  className={`w-full border border-gray-300 rounded-md p-2 ${
+                    darkMode
+                      ? "bg-gray-800 text-gray-300"
+                      : "bg-white text-gray-800"
+                  }`}
                 />
               </div>
               <div>
-                <label className={`block text-lg font-medium mb-1 ${darkMode ? "text-gray-300" : "text-black"}`}>Fariinta:</label>
+                <label
+                  className={`block text-lg font-medium mb-1 ${
+                    darkMode ? "text-gray-300" : "text-black"
+                  }`}
+                >
+                  Fariinta:
+                </label>
                 <textarea
+                required
                   rows="4"
-                  className={`w-full border border-gray-300 rounded-md p-2 ${darkMode ? "bg-gray-800 text-gray-300" : "bg-white text-gray-800"}`}
+                  className={`w-full border border-gray-300 rounded-md p-2 ${
+                    darkMode
+                      ? "bg-gray-800 text-gray-300"
+                      : "bg-white text-gray-800"
+                  }`}
                 ></textarea>
               </div>
-              <button className="bg-green-500 text-black py-2 px-4 rounded-md hover:bg-blue-600">
+              <button className="bg-green-500 block w-full text-center text-black py-2 px-4 rounded-md hover:bg-blue-600">
                 Submit
               </button>
             </motion.form>
@@ -97,6 +190,11 @@ function Contact() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Google Maps Location"
+            onClick={() => {
+              window.location.href =
+                "https://www.google.com/maps/search/Albaraka,+HODAN+DISTRICT,+MOGADISHU,%C2%A0SOMALIA/@2.0521362,45.3097859,17z?entry=ttu&g_ep=EgoyMDI1MDMyNC4wIKXMDSoASAFQAw%3D%3D";
+            }}
+            sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
           ></iframe>
         </div>
       </div>

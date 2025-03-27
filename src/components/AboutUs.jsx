@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../styles/about.css";
 import { useTheme } from "../Hooks/ThemeContext";
+import { Link } from "react-router-dom";
 
 function AboutUs() {
   const { darkMode } = useTheme(); // Use the useTheme hook
@@ -38,15 +39,15 @@ function AboutUs() {
             <p className={`text-xl leading-relaxed mb-4 text-center ${darkMode ? "text-gray-300" : "text-gray-700"}`}>
               Waxaan aaminsanahay in waxbarashadu ay tahay furaha mustaqbal wanaagsan, waxaana naga go'an inaa ardaydeena ka caawino gaarida hadafkooda.
             </p>
-            <button className="bg-green-600 w-full text-white font-bold py-3 px-6 rounded-full text-lg hover:bg-green-800 transition-colors">
+            <Link to="/contact" className="bg-green-600 w-[100%] block text-center text-white font-bold py-3 px-6 rounded-full text-lg hover:bg-green-800 transition-colors">
               Xog Dheeri
-            </button>
+            </Link>
           </motion.div>
           <div>
             <img
               src="DarulkarimLogo.png"
               alt="About Us"
-              className="rounded-full shadow-md h-[500px] w-[500px]"
+              className=" h-[380px] w-[380px] rounded-full shadow-md  md:h-[500px] md:w-[500px]"
             />
           </div>
         </div>
