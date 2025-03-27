@@ -18,13 +18,13 @@ function Navbar() {
         }`}
       >
         <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center px-2">
-              <FaPhone  className="mr-1 text-[25px] md:text-[30px]" />
+          <div className="flex items-center space-x-4 md:px-2 px-1">
+            <div className="flex items-center ">
+              <FaPhone  className="mr-1 text-[18px] md:text-[30px]" />
               <a href="https://api.whatsapp.com/send?phone=+252613777623&text=Hi-Darulkarim-Primary-and-Secondary-School" className="hover:underline"> +252 613777623 </a>
             </div>
             <div className="flex items-center">
-              <FaEnvelope className="mr-1 text-[25px] md:text-[30px]" />
+              <FaEnvelope className="mr-1 text-[18px] md:text-[30px]" />
               <a href="#">info@darulkarim.com</a>
             </div>
             {/* Waxyaabo kale oo aad rabto inaad ku darto */}
