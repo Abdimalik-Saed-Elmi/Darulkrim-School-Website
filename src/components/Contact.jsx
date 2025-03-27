@@ -49,9 +49,9 @@ function Contact() {
                 <img
                   src="DarulkarimLogo.png"
                   alt="Darulkarim"
-                  className="w-20 h-20"
+                  className="w-14 h-14 md:w-20 md:h-20"
                 />
-                <span className=" text-2xl font-semibold text-red-500">DARUL-KARIM PRIMARY <br /> AND SECONDARY SCHOOL</span>
+                <span className=" text-lg md:text-2xl font-semibold text-red-500">DARUL-KARIM PRIMARY <br /> AND SECONDARY SCHOOL</span>
               </a>
             </div>
             <ul className="list-disc list-inside mb-4 flex flex-col space-y-6">
