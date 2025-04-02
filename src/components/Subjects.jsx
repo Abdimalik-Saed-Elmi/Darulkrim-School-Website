@@ -95,7 +95,7 @@ function Subjects() {
                 className="w-full h-48 object-cover mb-4 rounded-md"
               />
               <h3 className={`text-xl font-semibold mb-2 ${darkMode ? "text-white" : "text-black"}`}>{subject.name}</h3>
-              <p className={`text-gray-100 ${darkMode ? "text-gray-400" : ""}`}>{subject.description}</p>
+              <p className={`text-gray-100 ${darkMode ? "text-gray-100" : "text-gray-800"}`}>{subject.description}</p>
             </motion.div>
           ))}
         </div>

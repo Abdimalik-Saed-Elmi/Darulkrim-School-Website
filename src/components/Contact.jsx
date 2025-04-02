@@ -12,6 +12,7 @@ import "../styles/about.css";
 import { useTheme } from "../Hooks/ThemeContext";
 
 function Contact() {
+  const emailAddress = "schooldks2022@gmail.com";
   const { darkMode } = useTheme(); // Use the useTheme hook
 
   return (
@@ -51,7 +52,9 @@ function Contact() {
                   alt="Darulkarim"
                   className="w-14 h-14 md:w-20 md:h-20"
                 />
-                <span className=" text-lg md:text-2xl font-semibold text-red-500">DARUL-KARIM PRIMARY <br /> & SECONDARY SCHOOL</span>
+                <span className=" text-lg md:text-2xl font-semibold text-red-500">
+                  DARUL-KARIM PRIMARY <br /> & SECONDARY SCHOOL
+                </span>
               </a>
             </div>
             <ul className="list-disc list-inside mb-4 flex flex-col space-y-6">
@@ -81,15 +84,14 @@ function Contact() {
                 <FaEnvelope size={35} className="rounded-full p-1 mr-2" />
                 Email:{" "}
                 <a
-                  href="https://mail.google.com/"
+                  href={`mailto:${emailAddress}`}
                   className="text-blue-900 ml-2 font-bold"
                 >
-                  {" "}
-                  schooldks2022@gmail.com
+                  {emailAddress}
                 </a>
               </li>
             </ul>
-            <div className="flex space-x-8 mt-8">
+            <div className="flex space-x-2 md:space-x-8 mt-8">
               <a
                 href="https://www.facebook.com/profile.php?id=100057218268902"
                 className="hover:text-gray-300 flex items-center gap-2"
@@ -165,7 +167,7 @@ function Contact() {
                   Fariinta:
                 </label>
                 <textarea
-                required
+                  required
                   rows="4"
                   className={`w-full border border-gray-300 rounded-md p-2 ${
                     darkMode
