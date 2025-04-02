@@ -5,41 +5,63 @@ import { useTheme } from "../Hooks/ThemeContext";
 import { Link } from "react-router-dom";
 
 function AboutUs() {
-  const { darkMode } = useTheme(); // Use the useTheme hook
+  const { darkMode } = useTheme();
 
   return (
     <motion.section
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.8, ease: "easeInOut" }}
       viewport={{ once: true }}
-      className={`py-16 min-h-screen ${darkMode ? "bg-gray-800 text-gray-200" : "bg-blue-300 text-black"}`} // Adjust background and text colors
+      className={`py-16 min-h-screen ${
+        darkMode ? "bg-gray-800 text-gray-200" : "bg-blue-300 text-gray-800"
+      }`}
     >
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
           viewport={{ once: true }}
-          className={`text-3xl md:text-4xl font-bold text-center mb-8 about-us-title ${darkMode ? "text-white" : "text-black"}`} // Adjust text color
+          className={`text-3xl md:text-4xl font-semibold text-center mb-8 ${
+            darkMode ? "text-white" : "text-gray-900"
+          }`}
         >
           About Us
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 pt-10 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 pt-10 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeInOut" }}
             viewport={{ once: true }}
-            className="text-lg leading-relaxed about-us-content"
+            className="text-lg leading-relaxed"
           >
-            <h1 className={`text-3xl font-bold leading-relaxed mb-4 text-center ${darkMode ? "text-white" : "text-black"}`}>
-              Dugsiga Darulkarim Primary & Secondary School waa xarun waxbarasho oo ku dadaasha inay ardaydeeda siiso waxbarasho tayo leh oo ku saleysan qiimaha diinta iyo dhaqanka.
+            <h1
+              className={`text-2xl md:text-3xl font-semibold leading-relaxed mb-4 text-center ${
+                darkMode ? "text-white" : "text-gray-900"
+              }`}
+            >
+              Dugsiga Darulkarim Primary & Secondary School
             </h1>
-            <p className={`text-xl leading-relaxed mb-4 text-center ${darkMode ? "text-gray-300" : "text-gray-700"}`}>
-              Waxaan aaminsanahay in waxbarashadu ay tahay furaha mustaqbal wanaagsan, waxaana naga go'an inaa ardaydeena ka caawino gaarida hadafkooda.
+            <p
+              className={`text-base md:text-lg leading-relaxed mb-6 text-center ${
+                darkMode ? "text-gray-300" : "text-gray-700"
+              }`}
+            >
+              Waa xarun waxbarasho oo ku dadaasha inay ardaydeeda siiso waxbarasho tayo leh oo ku saleysan qiimaha diinta iyo dhaqanka.
             </p>
-            <Link to="/contact" className="bg-green-600 w-[100%] block text-center text-white font-bold py-3 px-6 rounded-full text-lg hover:bg-green-800 transition-colors">
+            <p
+              className={`text-base md:text-lg leading-relaxed mb-6 text-center ${
+                darkMode ? "text-gray-300" : "text-gray-700"
+              }`}
+            >
+              Waxaan aaminsanahay in waxbarashadu ay tahay furaha mustaqbal wanaagsan, waxaana naga go'an inaan ardaydeena ka caawino gaarida hadafkooda.
+            </p>
+            <Link
+              to="/contact"
+              className="bg-green-600 w-full block text-center text-white font-medium py-3 px-6 rounded-full text-lg hover:bg-blue-700 transition-colors"
+            >
               Xog Dheeri
             </Link>
           </motion.div>
@@ -47,7 +69,7 @@ function AboutUs() {
             <img
               src="DarulkarimLogo.png"
               alt="About Us"
-              className=" h-[380px] w-[380px] rounded-full shadow-md  md:h-[500px] md:w-[500px]"
+              className="h-[300px] w-[300px] md:h-[400px] md:w-[400px] rounded-full shadow-md mx-auto"
             />
           </div>
         </div>

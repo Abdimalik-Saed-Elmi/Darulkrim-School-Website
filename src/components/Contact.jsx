@@ -51,7 +51,7 @@ function Contact() {
                   alt="Darulkarim"
                   className="w-14 h-14 md:w-20 md:h-20"
                 />
-                <span className=" text-lg md:text-2xl font-semibold text-red-500">DARUL-KARIM PRIMARY <br /> AND SECONDARY SCHOOL</span>
+                <span className=" text-lg md:text-2xl font-semibold text-red-500">DARUL-KARIM PRIMARY <br /> & SECONDARY SCHOOL</span>
               </a>
             </div>
             <ul className="list-disc list-inside mb-4 flex flex-col space-y-6">
@@ -174,7 +174,7 @@ function Contact() {
                   }`}
                 ></textarea>
               </div>
-              <button className="bg-green-500 block w-full text-center text-black py-2 px-4 rounded-md hover:bg-blue-600">
+              <button className="bg-green-600 block w-full text-center text-black py-2 px-4 rounded-md hover:bg-blue-700">
                 Submit
               </button>
             </motion.form>
