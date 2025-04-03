@@ -7,6 +7,7 @@ import TopStudents from "../components/TopStudents";
 import Contact from "../components/Contact";
 import Subjects from "../components/Subjects";
 import { useTheme } from "../Hooks/ThemeContext";
+import BlogsComponent from "../components/BlogsComponent";
 
 function Home() {
   const { darkMode } = useTheme();
@@ -21,6 +22,7 @@ function Home() {
       <Programs />
       <Subjects />
       <TopStudents />
+      <BlogsComponent />
     </div>
   );
 }

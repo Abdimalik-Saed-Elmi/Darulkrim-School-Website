@@ -39,11 +39,11 @@ function Navbar() {
               <span className="text-[14px] md:text-[16px] font-semibold text-red-600">DARUL-KARIM PRIMARY <br /> & SECONDARY SCHOOL</span>
             </Link>
           </div>
-          <div className="hidden md:flex space-x-4">
-            <Link to="/about" className="hover:text-blue-600 font-bold hover:underline transition-colors">About</Link>
-            <Link to="/programs" className="hover:text-blue-600 font-bold hover:underline transition-colors">Programs</Link>
-            <Link to="/contact" className="hover:text-blue-600 font-bold hover:underline transition-colors">Contact</Link>
-            <Link to="/blogs" className="hover:text-blue-600 font-bold hover:underline transition-colors">Blogs</Link>
+          <div className="hidden md:flex space-x-4 ">
+            <Link to="/about" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer  font-bold hover:underline transition-colors">About</Link>
+            <Link to="/programs" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer  font-bold hover:underline transition-colors">Programs</Link>
+            <Link to="/contact" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer  font-bold hover:underline transition-colors">Contact</Link>
+            <Link to="/blogs" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer  font-bold hover:underline transition-colors">News</Link>
           </div>
           <div className="flex items-center space-x-3">
             <button onClick={toggleDarkMode} className="flex items-center">
@@ -60,10 +60,10 @@ function Navbar() {
         </div>
         <div className={mobileMenu ? "md:hidden block" : "hidden"}>
           <div className="flex flex-col space-y-2 p-4 text-center">
-            <Link to="/about" className="hover:text-blue-600 transition-colors">About</Link>
-            <Link to="/programs" className="hover:text-blue-600 transition-colors">Programs</Link>
-            <Link to="/contact" className="hover:text-blue-600 transition-colors">Contact</Link>
-            <Link to="/blogs" className="hover:text-blue-600 transition-colors">Blogs</Link>
+            <Link to="/about" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer transition-colors">About</Link>
+            <Link to="/programs" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer transition-colors">Programs</Link>
+            <Link to="/contact" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer transition-colors">Contact</Link>
+            <Link to="/blogs" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer transition-colors">News</Link>
             <Link to="/login" className="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition-colors">Login</Link>
             <Link to="/student-portal" className="bg-gray-200 text-gray-800 py-2 px-4 rounded-full hover:bg-gray-300 transition-colors">Student Portal</Link>
           </div>
