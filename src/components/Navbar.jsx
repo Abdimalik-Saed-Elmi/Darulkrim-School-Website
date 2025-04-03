@@ -50,8 +50,8 @@ function Navbar() {
               {darkMode ? <FaSun className="hover:text-gray-300" size={24} /> : <FaMoon className="hover:text-gray-700" size={24} />}
             </button>
             <div className="hidden md:flex space-x-2">
-              <Link to="/login" className="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition-colors">Login</Link>
-              <Link to="/student-portal" className="bg-gray-200 text-gray-800 py-2 px-4 rounded-full hover:bg-gray-300 transition-colors">Student Portal</Link>
+              <Link to="#" className="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition-colors">Login</Link>
+              <Link to="#" className="bg-gray-200 text-gray-800 py-2 px-4 rounded-full hover:bg-gray-300 transition-colors">Student Portal</Link>
             </div>
             <button onClick={() => setMobileMenu(!mobileMenu)} className="md:hidden">
               {mobileMenu ? <HiX className="text-2xl" /> : <HiMenuAlt3 className="text-2xl" />}

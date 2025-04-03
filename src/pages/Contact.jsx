@@ -5,7 +5,6 @@ import ContactComponent from "../components/Contact";
 function ContactPage() {
   return (
     <div>
-      <ContactComponent />
     </div>
   );
 }

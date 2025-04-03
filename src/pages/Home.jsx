@@ -21,7 +21,6 @@ function Home() {
       <Programs />
       <Subjects />
       <TopStudents />
-      <Contact />
     </div>
   );
 }
