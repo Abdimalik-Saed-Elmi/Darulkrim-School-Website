@@ -9,7 +9,7 @@ import ContactPage from "./pages/Contact"; // Import the Contact page
 import Dashboard from "./pages/Dashboard";
 import BlogsPage from "./pages/BlogsPage";
 import Contact from "./components/Contact";
-import AboutusPage from "./pages/aboutusPage";
+import AboutusPage from "./pages/AboutusPage";
 
 function App() {
   return (
