@@ -25,7 +25,7 @@ function Navbar() {
             </div>
           </div>
           <div className="flex items-center space-x-3">
-            <a href="#" className="hover:text-gray-400"><FaFacebook /></a>
+            <a href="https://www.facebook.com/profile.php?id=100057218268902&sk=photos" className="hover:text-gray-400"><FaFacebook /></a>
             <a href="#" className="hover:text-gray-400"><FaTwitter /></a>
             <a href="#" className="hover:text-gray-400"><FaInstagram /></a>
           </div>
@@ -43,7 +43,7 @@ function Navbar() {
             <Link to="/about" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer  font-bold hover:underline transition-colors">About</Link>
             <Link to="/programs" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer  font-bold hover:underline transition-colors">Programs</Link>
             <Link to="/contact" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer  font-bold hover:underline transition-colors">Contact</Link>
-            <Link to="/blogs" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer  font-bold hover:underline transition-colors">News</Link>
+            <Link to="/blogs" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer  font-bold hover:underline transition-colors">Blogs</Link>
           </div>
           <div className="flex items-center space-x-3">
             <button onClick={toggleDarkMode} className="flex items-center">

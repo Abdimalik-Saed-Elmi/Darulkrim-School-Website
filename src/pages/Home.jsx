@@ -22,7 +22,6 @@ function Home() {
       <Programs />
       <Subjects />
       <TopStudents />
-      <BlogsComponent />
     </div>
   );
 }
