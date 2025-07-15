@@ -14,7 +14,10 @@ import AboutusPage from "./pages/AboutusPage";
 function App() {
   return (
   <div>
+    <div className="mb-[114px] md:mb-[118px]">
       <Navbar />
+
+    </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutusPage />} /> 

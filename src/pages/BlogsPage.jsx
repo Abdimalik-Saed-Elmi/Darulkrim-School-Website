@@ -7,7 +7,7 @@ import { useTheme } from '../Hooks/ThemeContext';
 const BlogsPage = () => {
    const { darkMode } = useTheme()
   return (
-    <div>
+    <div className='mt-36'>
       <motion.div
         className="w-fit mx-auto my-8" // w-fit si uu u qaato ballaca content-kiisa, mx-auto si uu u noqdo bartamaha
         animate={{

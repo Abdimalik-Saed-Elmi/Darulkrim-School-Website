@@ -12,6 +12,7 @@ function Navbar() {
 
   return (
     <>
+        <div className="fixed top-0 left-0 right-0  opacity-88 backdrop-blur-md shadow z-10">
       <div className={`py-3 px-2 text-sm ${darkMode ? "bg-gray-800 text-white" : "bg-green-100 text-gray-800"}`}>
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center space-x-3 md:px-2 px-1">
@@ -63,12 +64,13 @@ function Navbar() {
             <Link to="/about" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer transition-colors">About</Link>
             <Link to="/programs" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer transition-colors">Programs</Link>
             <Link to="/contact" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer transition-colors">Contact</Link>
-            <Link to="/blogs" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer transition-colors">News</Link>
+            <Link to="/blogs" className="hover:text-blue-900 hover:bg-green-300 hover:py-1 px-2 rounded cursor-pointer transition-colors">Blogs</Link>
             <Link to="https://darulkarim.schoolkaal.com/" className="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-blue-700 transition-colors font-semibold">Sing In</Link>
             <Link to="/student-portal" className="bg-gray-200 text-gray-800 py-2 px-4 rounded-full hover:bg-gray-300 transition-colors font-semibold">Student Portal</Link>
           </div>
         </div>
       </nav>
+      </div>
     </>
   );
 }

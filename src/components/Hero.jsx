@@ -5,7 +5,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Hero() {
-  const images = ["white-hero1.jpg", "white-hero2.jpg", "white-hero3.jpg"];
+  const images = ["white-hero2.jpg", "white-hero3.jpg"];
   const Darkimages = ["DarkImage.webp", "DarkImage2.png", "DarkImage3.jpg"];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

@@ -52,7 +52,7 @@ function BlogsComponent() {
           <div className={`w-64 h-48 bg-gray-300 rounded-md animate-pulse mb-4`}></div>
           <div className={`h-6 bg-gray-300 rounded-md animate-pulse w-48 mb-2`}></div>
           <div className={`h-4 bg-gray-300 rounded-md animate-pulse w-64 mb-4`}></div>
-          <p className={`text-red-500 font-semibold text-xl`}>
+          <p className={`text-red-500 font-semibold text-xl text-center`}>
             Waxaa dhacay qalad. Fadlan dib u cusbooneysii bogga.
           </p>
         </div>
